@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(110, 0, 110);
+    color: rgb(158, 31, 227); 
+    margin: 0px
+}
+
+
+/* ----------------頂欄---------------- */
+
+.top {
+    background-color: rgb(52, 34, 58);
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@keyframes blog {
+    from, to {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+}
+
+#Blog{
+    color: rgb(205, 177, 205);
+    font-size: 25px;
+    margin: 0 20px;
+    font-family: monospace,STCaiyun;
+    animation: blog 2s infinite;
+    transition: .5s;
+}
+#Blog:hover{
+    color:rgb(181, 98, 250);
+}
+
+#Berry {
+    border: 2px ridge rgb(41, 36, 36);
+    height: 45px;
+    width: 45px;
+    margin-right: auto;
+    animation: blog 2s infinite;
+}
+
+.topword{
+    color: rgb(236, 126, 236);
+    font-size: 20px;
+
+    margin: 0 15px;
+    transition: .5s;
+}
+.topword:hover{
+    color:rgb(196, 61, 236);
+    margin: 0 19px 0 17px;
+}

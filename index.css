@@ -1,0 +1,192 @@
+body {
+    background-color: rgb(110, 0, 110);
+    color: rgb(0, 0, 0); 
+    margin: 0px
+}
+
+img {
+    border: 5px ridge rgb(87, 21, 192);
+    background-color: rgb(204, 166, 253);
+    width: 100px;
+    height: 100px;
+}
+/* ------------------------------------- */
+.invisible {
+    display: none;
+    visibility: hidden;
+}
+/* --------------初始畫面---------------- */
+#loading {
+    top: 20%;
+    left: 15%;
+    height: 50%;
+    width: 70%;
+    border: 4px;
+    border-color: rgb(180, 119, 201);
+    border-style: outset;
+    background-color: rgb(255, 186, 255);
+    
+    position: fixed;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 
+                0 2px 6px 0 rgb(0 0 0 / 12%); 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#loading-spam{
+    margin: 0 100%;
+    font-size: 40px;
+}
+#loading-button {
+    width: 10%;
+    height: 10%;
+    background-color: rgba(109, 62, 105, 0.308);
+    border: 2px solid rgb(72, 54, 100);
+    cursor: pointer;
+}
+/* ----------------頂欄---------------- */
+
+.top {
+    background-color: rgb(52, 34, 58);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@keyframes blog {
+    from ,to{
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+}
+
+#Blog{
+    color: rgb(205, 177, 205);
+    font-size: 25px;
+    margin: 0 20px;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 100%);
+
+    cursor: pointer;
+    font-family: monospace,STCaiyun;
+    animation: blog 2s infinite;
+    transition: .5s;
+}
+#Blog:hover{
+    color:rgb(181, 98, 250);
+}
+
+#Berry {
+    border: 2px ridge rgb(41, 36, 36);
+    height: 45px;
+    width: 45px;
+    margin-right: auto;
+    animation: blog 2s infinite;
+}
+
+.topword{
+    color: rgb(236, 126, 236);
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 100%);
+    cursor: pointer;
+
+    margin: 0 15px;
+    transition: .5s;
+}
+.topword:hover{
+    color:rgb(196, 61, 236);
+    margin: 0 19px 0 17px;
+}
+
+@keyframes info{
+    from {
+        background-color: rgb(52, 34, 58);
+        color: rgb(52, 34, 58);
+    }
+    to {
+        background-color: rgb(99, 65, 110);
+        color: rgb(236, 126, 236);
+    }
+}
+#profile-info{
+    color: rgb(236, 126, 236);
+    background-color: rgb(66 61 68 / 25%);
+    font-size: 25px;
+    margin: 0 20px;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 75%);
+    top: 8px;
+    left: 400px;
+    position: absolute;
+    animation: info 1.5s ease forwards;
+}
+
+
+/* --------------Bubble----------------- */
+@keyframes wave {
+    from, to {
+        transform: translate(-50%, 0%);
+    }
+    50% {
+        transform: translate(-50%, -20%);
+    }
+}
+#bubble-wrapper {
+    height: 100%;
+    width: 100%;
+
+    position: fixed;
+    bottom: 0px;
+
+    overflow: hidden;
+    pointer-events: none;
+}
+.bubble{
+    height: max(300px, 30vw);
+    width: max(300px, 30vw);
+
+    background-color: rgba(141, 71, 255, 0.158);
+    border-radius: 100%;
+
+    position: absolute;
+    left: 50%;
+    top: 100%;
+
+    animation: wave 2s ease-in-out infinite;
+}
+/* -------------------------------------- */
+
+
+.fake {
+    background-color: rgb(225, 188, 243);
+    height: 250px;
+
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.container {
+    background-color: blueviolet;
+    height: 500px;
+    width: 330px;
+    border: 10px ridge rgb(103, 24, 230);
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
