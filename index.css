@@ -1,0 +1,197 @@
+body {
+    background-color: rgb(110, 0, 110);
+    color: rgb(0, 0, 0); 
+    margin: 0px
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100% ;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+h3 {
+    margin: 0;
+}
+/* ------------------------------------- */
+.invisible {
+    display: none;
+    visibility: hidden;
+}
+/* --------------初始畫面---------------- */
+#loading {
+    top: 20%;
+    left: 15%;
+    height: 50%;
+    width: 70%;
+    border: 4px;
+    border-color: rgb(180, 119, 201);
+    border-style: outset;
+    background-color: rgb(255, 186, 255);
+    
+    position: fixed;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 
+                0 2px 6px 0 rgb(0 0 0 / 12%); 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#loading-spam{
+    margin: 0 100%;
+    font-size: 40px;
+}
+#loading-button {
+    width: 10%;
+    height: 10%;
+    background-color: rgba(109, 62, 105, 0.308);
+    border: 2px solid rgb(72, 54, 100);
+    cursor: pointer;
+}
+/* ----------------頂欄---------------- */
+
+.top {
+    background-color: rgb(52, 34, 58);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@keyframes blog {
+    from ,to{
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+}
+
+#Blog{
+    color: rgb(205, 177, 205);
+    font-size: 25px;
+    margin-right: auto;
+    margin-left: 20px;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 100%);
+
+    cursor: pointer;
+    font-family: monospace,STCaiyun;
+    /* animation: blog 2s infinite;
+    transition: .5s; */
+}
+#Blog:hover{
+    color:rgb(198, 119, 223);
+}
+
+#Berry {
+    border: 2px ridge rgb(41, 36, 36);
+    height: 45px;
+    width: 45px;
+    margin-right: auto;
+    animation: blog 2s infinite;
+}
+
+.topword{
+    color: rgb(236, 126, 236);
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 100%);
+    cursor: pointer;
+
+    margin: 0 15px;
+    transition: .5s;
+}
+.topword:hover{
+    color:rgb(196, 61, 236);
+    margin: 0 19px 0 17px;
+}
+
+@keyframes info{
+    from {
+        background-color: rgb(52, 34, 58);
+        color: rgb(52, 34, 58);
+    }
+    to {
+        background-color: rgb(99, 65, 110);
+        color: rgb(236, 126, 236);
+    }
+}
+#profile-info{
+    color: rgb(236, 126, 236);
+    background-color: rgb(66 61 68 / 25%);
+    font-size: 25px;
+    margin: 0 20px;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 75%);
+    top: 8px;
+    left: 160px;
+    position: absolute;
+    animation: info 1.5s ease forwards;
+}
+
+
+
+
+.fake {
+    background-color: rgb(154, 102, 180);
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    
+}
+.inner{
+    height: 490px;
+    width: 50vw;
+    background-color: rgb(66, 61, 70);
+    border-radius: 3rem;
+    min-width: 340px;
+    max-width: 360px;
+    padding: 30px;
+    position: relative;
+
+    font-family: monospace;
+}
+#img{
+    height: 80px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#avater{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border-color: rgb(224, 190, 240);
+    border-style: solid;
+    border-width: 6px;
+    display: flex;
+}
+#name{
+    color: rgb(207, 149, 226);
+    font-size: 22px;
+}
+.introduce{
+    color: rgb(212, 175, 224);
+    font-size: 18px;
+}
+#link{
+    height: 75px;
+    width: 100%;
+    padding-top: 25px;
+    margin-top: 50px;
+    border-radius: 3rem;
+    background-color: rgb(45, 42, 48);
+
+    display: flex;
+    justify-content: flex-start;
+}
+.icon{
+    margin-left: 30px;
+}
+
+
+
