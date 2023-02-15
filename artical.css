@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(72, 30, 88);
+    color: rgb(0, 0, 0); 
+    margin: 0px;
+}
+/* ------------------------------------- */
+.invisible {
+    display: none;
+    visibility: hidden;
+}
+/* ----------------頂欄---------------- */
+.top {
+    background-color: rgb(52, 34, 58);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#Blog{
+    color: rgb(205, 177, 205);
+    font-size: 25px;
+    margin-right: auto;
+    margin-left: 20px;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 100%);
+
+    cursor: pointer;
+    font-family: monospace,STCaiyun;
+    /* animation: blog 2s infinite;
+    transition: .5s; */
+}
+#Blog:hover{
+    color:rgb(198, 119, 223);
+}
+
+.topword{
+    color: rgb(236, 126, 236);
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 100%);
+    cursor: pointer;
+
+    margin: 0 15px;
+    transition: .5s;
+}
+.topword:hover{
+    color:rgb(196, 61, 236);
+    margin: 0 19px 0 17px;
+}
+
+@keyframes info{
+    from {
+        background-color: rgb(52, 34, 58);
+        color: rgb(52, 34, 58);
+    }
+    to {
+        background-color: rgb(99, 65, 110);
+        color: rgb(236, 126, 236);
+    }
+}
+#profile-info{
+    color: rgb(236, 126, 236);
+    background-color: rgb(66 61 68 / 25%);
+    font-size: 25px;
+    margin: 0 20px;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 75%);
+    top: 8px;
+    left: 160px;
+    position: absolute;
+    animation: info 1.5s ease forwards;
+}
